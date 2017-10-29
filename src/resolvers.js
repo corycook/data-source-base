@@ -11,13 +11,8 @@ export default {
   queryResolvers: {
     // TODO: Update query resolver name(s) to match schema queries
     YourDataSource: (rootValue, { id }, context) =>
-      new Promise((resolve, reject) => {
-        // TODO: Update to use the model and call the proper method.
-        context.YourDataSource
-          .getById(id)
-          .then(resolve)
-          .catch(reject);
-      }),
+      // TODO: Update to use the model and call the proper method.
+      context.YourDataSource.getById(id),
   },
 
   // Data fields (which data from the response goes to which field?)
